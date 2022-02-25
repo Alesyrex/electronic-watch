@@ -10,8 +10,10 @@ public class ElectronicWatch {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        int seconds = scanner.nextInt();
+        int seconds;
+        try (Scanner scanner = new Scanner(System.in)) {
+            seconds = scanner.nextInt();
+        }
         seconds = Math.abs(seconds);
         seconds %= SEC_OF_DAY;
 
