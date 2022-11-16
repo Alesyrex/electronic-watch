@@ -7,10 +7,12 @@ public class ElectronicWatch {
     public static final int SEC_OF_HOUR = 3600;
     public static final int SEC_OF_DAY = 86400;
     public static final String OUTPUT_FORMAT = "%d:%02d:%02d";
+    public static final String PHRASE_INPUT = "Enter random number";
 
     public static void main(String[] args) {
 
         int seconds;
+        System.out.println(PHRASE_INPUT);
         try (Scanner scanner = new Scanner(System.in)) {
             seconds = scanner.nextInt();
         }
